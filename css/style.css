@@ -237,3 +237,46 @@ body {
 body {
   position: relative;
 }
+
+
+/* Projects section styles */
+#projects h3 a {
+  color: var(--light-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#projects h3 a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.see-all-projects {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* see-more-btn styles */
+.see-more-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.see-more-link:hover {
+  color: var(--light-accent);
+  text-decoration: underline;
+}
+
+.see-more-link::after {
+  content: " →";
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.see-more-link:hover::after {
+  transform: translateX(3px);
+}
