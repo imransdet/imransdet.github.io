@@ -280,3 +280,14 @@ body {
 .see-more-link:hover::after {
   transform: translateX(3px);
 }
+
+#experience h3 a {
+  color: var(--light-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#experience h3 a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
