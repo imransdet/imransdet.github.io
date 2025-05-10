@@ -4,114 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Al Imran - Projects</title>
-  <style>
-    :root {
-      --primary-bg: #121212;
-      --secondary-bg: #1E1E1E;
-      --accent-color: #4CAF50;
-      --light-accent: #81C784;
-      --text-primary: #FFFFFF;
-      --text-secondary: #BDBDBD;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--primary-bg);
-      color: var(--text-primary);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    header {
-      background-color: var(--secondary-bg);
-      padding: 30px 0;
-      text-align: center;
-      border-bottom: 3px solid var(--accent-color);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: var(--accent-color);
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 30px;
-      padding: 40px 0;
-    }
-
-    .project-card {
-      background-color: var(--secondary-bg);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-image {
-      height: 200px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .project-content {
-      padding: 20px;
-    }
-
-    .project-content h2 {
-      margin-top: 0;
-      color: var(--light-accent);
-    }
-
-    .project-links {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .project-link {
-      display: inline-block;
-      padding: 6px 12px;
-      background-color: var(--accent-color);
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      transition: background-color 0.3s;
-    }
-
-    .project-link:hover {
-      background-color: var(--light-accent);
-    }
-
-    footer {
-      background-color: var(--secondary-bg);
-      padding: 20px 0;
-      text-align: center;
-      color: var(--text-secondary);
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .project-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/projects.css">
 </head>
 <body>
 <header>
@@ -122,69 +15,165 @@
 
 <main class="container">
   <div class="project-grid">
-    <!-- POCKET eWallet -->
+    <!-- Siemens PLM System -->
     <div class="project-card">
-      <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1613243555978-636c48dc653c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+      <div class="project-image" style="background-image: url('../images/siemens-plm.png');"></div>
       <div class="project-content">
-        <h2>POCKET eWallet</h2>
-        <p>Payment Service Provider (PSP) eWallet for Personal and Business users with secure transactions and financial management features.</p>
+        <h2>Siemens PLM System</h2>
+        <p>Product lifecycle management system automation and testing.</p>
         <div class="project-links">
-          <a href="#" class="project-link">Google Play</a>
-          <a href="#" class="project-link">App Store</a>
-          <a href="#" class="project-link">Admin Panel</a>
-          <a href="#" class="project-link">About</a>
+          <a href="https://www.plm.automation.siemens.com/" target="_blank" class="project-link">Project Link</a>
         </div>
       </div>
     </div>
 
-    <!-- TIZEN OS -->
+    <!-- Dassault CATIA v6 -->
     <div class="project-card">
-      <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+      <div class="project-image" style="background-image: url('../images/catia-v6.png');"></div>
       <div class="project-content">
-        <h2>TIZEN OS</h2>
-        <p>An open and flexible operating system built by Samsung for mobile and connected device ecosystem across multiple industries.</p>
+        <h2>Dassault CATIA v6</h2>
+        <p>Experience the Power of CATIA on the 3DEXPERIENCE platform that enables you to understand your real world better by modeling your enterprise virtually.</p>
         <div class="project-links">
-          <a href="https://www.tizen.org/" target="_blank" class="project-link">Tizen OS</a>
-          <a href="https://developer.tizen.org/development/tizen-studio" target="_blank" class="project-link">TIZEN Studio</a>
-          <a href="https://www.tizen.org/about" target="_blank" class="project-link">About</a>
+          <a href="https://www.3ds.com/" target="_blank" class="project-link">Project Link</a>
         </div>
       </div>
     </div>
 
-    <!-- RightMesh SDK -->
+    <!-- Rent By Owner -->
     <div class="project-card">
-      <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+      <div class="project-image" style="background-image: url('../images/rentbyowner.png');"></div>
       <div class="project-content">
-        <h2>RightMesh SDK</h2>
-        <p>IoT Based Mesh Network that enables devices to connect and share content without internet using peer-to-peer mesh networking technology.</p>
+        <h2>Rent By Owner</h2>
+        <p>Property rental platform automation testing and quality assurance.</p>
         <div class="project-links">
-          <a href="https://www.rightmesh.io/sdk" target="_blank" class="project-link">Mesh SDK</a>
-          <a href="https://www.rightmesh.io/about" target="_blank" class="project-link">About</a>
+          <a href="https://www.rentbyowner.com/" target="_blank" class="project-link">Project Link</a>
         </div>
       </div>
     </div>
+
+    <!-- Right Mesh -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/rightmesh.png');"></div>
+      <div class="project-content">
+        <h2>Right Mesh</h2>
+        <p>Using the devices people already have – their phones and IoT devices – users can connect and share content without the need of data or an internet connection</p>
+        <div class="project-links">
+          <a href="https://rightmesh.io/" target="_blank" class="project-link">Project Link</a>
+          <a href="https://rightmesh.io/sdk" target="_blank" class="project-link">SDK</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Samsung Tizen OS -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/tizen-os.png');"></div>
+      <div class="project-content">
+        <h2>Tizen OS By Samsung</h2>
+        <p>Tizen is an open and flexible operating system built from the ground up to address the needs of all stakeholders of the mobile and connected device ecosystem</p>
+        <div class="project-links">
+          <a href="https://www.tizen.org/" target="_blank" class="project-link">Project Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Samsung Tizen SDK -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/tizen-os.png');"></div>
+      <div class="project-content">
+        <h2>Tizen Studio By Samsung</h2>
+        <p>Tizen Studio provides a comprehensive set of tools for developing Tizen native and Web applications. It is based on a new version of Eclipse</p>
+        <div class="project-links">
+          <a href="https://developer.tizen.org/development/tizen-studio/" target="_blank" class="project-link">Project Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Samsung Smart Phone Android OS -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/samsung-android.png');"></div>
+      <div class="project-content">
+        <h2>Android OS</h2>
+        <p>Customized Android OS for Samsung Smart Phone</p>
+        <div class="project-links">
+          <a href="https://developer.android.com/" target="_blank" class="project-link">Project Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Showcase -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/rpam.png');"></div>
+      <div class="project-content">
+        <h2>Property Showcase</h2>
+        <p>Display suite presentation solution for property business</p>
+      </div>
+      <div class="project-links">
+        <a href="https://app.showcase.space/" target="_blank" class="project-link">Project Link</a>
+      </div>
+    </div>
+
 
     <!-- Saturday Lifestyle -->
     <div class="project-card">
-      <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+      <div class="project-image" style="background-image: url('../images/saturday-lifestyle.png');"></div>
       <div class="project-content">
         <h2>Saturday Lifestyle</h2>
+        <!-- <h3>Business Type: eCommerce</h3>-->
         <p>eCommerce platform with innovative virtual try-on features, home try options, and personalized shopping experiences.</p>
         <div class="project-links">
-          <a href="#" class="project-link">Google Play</a>
-          <a href="#" class="project-link">App Store</a>
-          <a href="#" class="project-link">Web Platform</a>
-          <a href="#" class="project-link">More Projects</a>
+          <a href="https://play.google.com/store/apps/details?id=com.saturdays" target="_blank" class="project-link">Android App</a>
+          <a href="https://apps.apple.com/us/app/saturdays-lifestyle/id1542745559" target="_blank" class="project-link">iOS App</a>
+          <a href="https://saturdays.com/" target="_blank" class="project-link">Web App</a>
         </div>
       </div>
     </div>
+
+    <!-- SetSchedule -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/setschedule.png');"></div>
+      <div class="project-content">
+        <h2>SetSchedule</h2>
+        <p>Real estate scheduling application with automated appointment management and calendar integration.</p>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=com.setschedule.agent" target="_blank" class="project-link">Android App</a>
+          <a href="https://apps.apple.com/us/app/setschedule/id1333258740" target="_blank" class="project-link">iOS App</a>
+          <a href="https://www.setschedule.com/app" target="_blank" class="project-link">Web App</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOLclock App -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/solclock.png');"></div>
+      <div class="project-content">
+        <h2>SOLclock App</h2>
+        <p>Energy monitoring application for solar-powered devices with real-time analytics.</p>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=com.solshare.solclockbangla.app" target="_blank" class="project-link">Google Play</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOLGrid App -->
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('../images/solgrid.png');"></div>
+      <div class="project-content">
+        <h2>SOLGrid App</h2>
+        <p>Grid management application for solar energy distribution systems.</p>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=com.solshare.solboxbanla.app" target="_blank" class="project-link">Google Play</a>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </main>
 
 <footer>
   <div class="container">
     <p>© 2024 Al Imran. All rights reserved.</p>
-    <p><a href="../index.html" style="color: var(--accent-color);">← Back to Portfolio</a></p>
+    <p><a href="../index.html" style="color: var(--accent-color);">← Back</a></p>
   </div>
 </footer>
 </body>
