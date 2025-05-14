@@ -8,35 +8,63 @@
 </head>
 <body>
 <header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <div class="container">
     <h1>AL IMRAN</h1>
     <p>ISTQB Certified Tester | Test Automation Enthusiast</p>
+    <div class="contact-info">
+      <div class="contact-item" onclick="copyToClipboard('+8801911833792')">
+        <i class="fas fa-phone"></i>
+        <span>+880 1911 833792</span>
+        <span class="copy-tooltip">Click to copy</span>
+      </div>
+      <div class="contact-item" onclick="copyToClipboard('imranreee@gmail.com')">
+        <i class="fas fa-envelope"></i>
+        <span>imranreee@gmail.com</span>
+        <span class="copy-tooltip">Click to copy</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Dhaka, Bangladesh</span>
+      </div>
+    </div>
     <div class="social-links">
       <a href="https://www.xing.com/profile/Al_Imran090879" target="_blank">XING</a>
       <a href="https://linkedin.com/in/al-imran-56675092" target="_blank">LinkedIn</a>
       <a href="https://github.com/imransdet" target="_blank">GitHub</a>
-      <a href="mailto:imranreee@gmail.com">Email</a>
     </div>
   </div>
 </header>
 
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      const tooltip = event.currentTarget.querySelector('.copy-tooltip');
+      tooltip.textContent = 'Copied!';
+      setTimeout(() => {
+        tooltip.textContent = 'Click to copy';
+      }, 2000);
+    });
+  }
+</script>
+
 <main class="container">
   <section id="about">
     <h2>Professional Summary</h2>
-    <p>With over 10 years of experience in software testing including both manual and automation testing, I am an ISTQB certified professional passionate about building quality software products. I specialize in creating efficient test automation frameworks and implementing continuous testing practices.</p>
+    <p>ISTQB certified QA Engineer with 10+ years of experience in both manual and automation testing. Skilled in building robust automation frameworks and driving continuous testing to ensure high quality software delivery.</p>
   </section>
 
   <section id="highlights">
     <h2>Key Highlights</h2>
     <div class="highlight">
       <ul>
-        <li>Reduced Regression testing time by up to 60% through automation testing</li>
-        <li>Performed Performance testing to identify bottlenecks and optimize system efficiency</li>
-        <li>Expertise in designing and developing automation test case for API, mobile, and web applications</li>
-        <li>Strong understanding of end-to-end quality assurance processes and best practices</li>
-        <li>Quick adaptability to new tools and technologies with minimal ramp-up time</li>
-        <li>Built and led QA teams to ensure efficient and quality-driven releases</li>
-        <li>Analyzed requirements early to enable proactive early testing</li>
+        <li>Reduced regression testing time by 60% through effective automation.</li>
+        <li>Conducted performance testing to uncover and resolve system bottlenecks.</li>
+        <li>Designed and developed automation for API, mobile, and web applications.</li>
+        <li>Deep understanding of end-to-end QA processes and best practices.</li>
+        <li>Quickly adapt to new tools and technologies with minimal learning curve.</li>
+        <li>Built and led QA teams focused on efficient, high-quality releases.</li>
+        <li>Proactively analyzed requirements to enable early testing and defect detection.</li>
       </ul>
     </div>
 
@@ -241,6 +269,15 @@
       <h3>University of Information Technology & Science, Dhaka</h3>
       <p class="date">May 2011 - April 2016</p>
       <p>B.Sc in Electrical and Electronic Engineering (EEE)</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Professional Certification</h2>
+    <div class="timeline-content">
+      <h3>International Software Testing Qualifications Board</h3>
+      <p class="date">July, 21</p>
+      <p>ISTQB-CTFL</p>
     </div>
   </section>
 </main>

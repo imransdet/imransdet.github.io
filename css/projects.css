@@ -104,3 +104,31 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.project-details {
+  margin: 15px 0;
+  padding: 12px;
+  background-color: rgba(76, 175, 80, 0.08);
+  border-radius: 6px;
+}
+
+.detail-item {
+  display: flex;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--light-accent);
+  min-width: 100px;
+}
+
+.detail-value {
+  color: var(--text-primary);
+  flex: 1;
+}

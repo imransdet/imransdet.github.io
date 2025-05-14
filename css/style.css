@@ -291,3 +291,49 @@ body {
   color: var(--accent-color);
   text-decoration: underline;
 }
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.contact-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-item i {
+  color: var(--accent-color);
+}
+
+.copy-tooltip {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.contact-item:hover .copy-tooltip {
+  opacity: 1;
+}
