@@ -337,3 +337,21 @@ body {
 .contact-item:hover .copy-tooltip {
   opacity: 1;
 }
+
+.skills-header-link {
+  color: var(--light-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skills-header-link:hover {
+  color: var(--accent-color);
+}
+
+.skills-header-link i {
+  font-size: 0.7em;
+  opacity: 0.8;
+}
