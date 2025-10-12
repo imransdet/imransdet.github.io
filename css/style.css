@@ -417,14 +417,16 @@ body {
   border: 1px solid rgba(189, 189, 189, 0.3);
 }
 
-.current-project {
+.current-project,
+.previous-project {
   border-left: 4px solid var(--accent-color) !important;
   background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, var(--secondary-bg) 100%) !important;
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
   transition: all 0.3s ease;
 }
 
-.current-project:hover {
+.current-project:hover,
+.previous-project:hover {
   transform: translateX(5px);
   box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
 }
@@ -454,12 +456,137 @@ body {
   }
 }
 
-.see-all-projects {
-  text-align: center;
-  margin-top: 30px;
+/* Project Category Badges */
+.project-category-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-/* see-more-btn styles */
+.project-category-badge.web {
+  background: linear-gradient(135deg, #2196F3 0%, #64B5F6 100%);
+  color: white;
+}
+
+.project-category-badge.mobile {
+  background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%);
+  color: white;
+}
+
+.project-category-badge.iot {
+  background: linear-gradient(135deg, #9C27B0 0%, #BA68C8 100%);
+  color: white;
+}
+
+/* Store Links */
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, var(--secondary-bg) 0%, rgba(40, 40, 40, 0.9) 100%);
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.store-link i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.store-link:hover {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--light-accent) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.store-link:hover i {
+  color: var(--text-primary);
+}
+
+.see-all-projects {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 0;
+}
+
+/* See All Projects Button - Eye-catching design */
+.see-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--light-accent) 100%);
+  color: var(--primary-bg);
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.see-all-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.see-all-btn:hover::before {
+  left: 100%;
+}
+
+.see-all-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(76, 175, 80, 0.6);
+}
+
+.see-all-btn i:first-child {
+  font-size: 1.3rem;
+  animation: rotateIcon 3s linear infinite;
+}
+
+.see-all-btn i:last-child {
+  transition: transform 0.3s ease;
+}
+
+.see-all-btn:hover i:last-child {
+  transform: translateX(8px);
+}
+
+@keyframes rotateIcon {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+/* Legacy see-more-link styles (if used elsewhere) */
 .see-more-link {
   color: var(--accent-color);
   text-decoration: none;

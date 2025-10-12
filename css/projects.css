@@ -30,9 +30,15 @@ header {
 }
 
 header h1 {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 2.5rem;
   color: var(--accent-color);
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
 }
 
 .project-grid {
@@ -131,4 +137,214 @@ footer {
 .detail-value {
   color: var(--text-primary);
   flex: 1;
+}
+
+/* Category Sections */
+.category-section {
+  margin-bottom: 60px;
+}
+
+.category-heading {
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.category-heading i {
+  font-size: 2.2rem;
+  color: var(--light-accent);
+}
+
+/* Category Badges */
+.category-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin: 10px 0;
+}
+
+.category-badge.mobile {
+  background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%);
+  color: white;
+}
+
+.category-badge.web {
+  background: linear-gradient(135deg, #2196F3 0%, #64B5F6 100%);
+  color: white;
+}
+
+.category-badge.iot {
+  background: linear-gradient(135deg, #9C27B0 0%, #BA68C8 100%);
+  color: white;
+}
+
+/* Live Badge */
+.live-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--accent-color);
+  color: var(--primary-bg);
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Enhanced Project Cards */
+.project-card {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.05) 0%, var(--secondary-bg) 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+  border-color: var(--accent-color);
+}
+
+/* Featured Card (for special projects) */
+.featured-card {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, var(--secondary-bg) 100%);
+  border: 2px solid var(--accent-color);
+}
+
+.featured-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(76, 175, 80, 0.5);
+}
+
+.project-content h2 {
+  margin-top: 0;
+  color: var(--light-accent);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-content h2 i {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+}
+
+/* Enhanced Store Links */
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, var(--secondary-bg) 0%, rgba(40, 40, 40, 0.9) 100%);
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-link i {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+
+.project-link:hover {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--light-accent) 100%);
+  color: var(--primary-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.project-link:hover i {
+  color: var(--primary-bg);
+}
+
+/* Special styling for store links */
+.project-link.google-play:hover {
+  background: linear-gradient(135deg, #3DDC84 0%, #00C853 100%);
+}
+
+.project-link.app-store:hover {
+  background: linear-gradient(135deg, #555555 0%, #333333 100%);
+}
+
+/* Enhanced Project Details */
+.project-details {
+  margin: 15px 0;
+  padding: 15px;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(30, 30, 30, 0.5) 100%);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--light-accent);
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-label i {
+  color: var(--accent-color);
+}
+
+.detail-value {
+  color: var(--text-primary);
+  flex: 1;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category-heading {
+    font-size: 1.5rem;
+  }
+  
+  .category-heading i {
+    font-size: 1.7rem;
+  }
+  
+  .project-content h2 {
+    font-size: 1.3rem;
+  }
 }
