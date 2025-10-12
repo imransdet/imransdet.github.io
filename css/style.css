@@ -155,37 +155,108 @@ h2::after {
   margin-bottom: 10px;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
 .skills-category {
-  margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--secondary-bg) 0%, rgba(30, 30, 30, 0.8) 100%);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-category:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(76, 175, 80, 0.3);
+}
+
+.category-icon {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  min-width: 30px;
+  text-align: center;
 }
 
 .category-title {
   color: var(--light-accent);
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 10px;
 }
 
 .skill {
-  background-color: var(--secondary-bg);
-  padding: 8px 15px;
-  border-radius: 20px;
+  background: linear-gradient(135deg, var(--secondary-bg) 0%, rgba(40, 40, 40, 0.9) 100%);
+  padding: 10px 16px;
+  border-radius: 25px;
   border: 1px solid var(--accent-color);
   color: var(--text-primary);
   transition: all 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.skill i {
+  font-size: 1.1rem;
+  color: var(--accent-color);
 }
 
 .skill:hover {
-  background-color: var(--accent-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--light-accent) 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+  border-color: var(--light-accent);
+}
+
+.skill:hover i {
+  color: var(--text-primary);
+  animation: iconBounce 0.5s ease;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Responsive adjustments for skills grid */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-icon {
+    font-size: 1.5rem;
+  }
+  
+  .category-title {
+    font-size: 1rem;
+  }
 }
 
 .highlight {
