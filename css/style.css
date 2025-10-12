@@ -734,8 +734,18 @@ h2::after {
 
 .cert-content h3 {
   margin: 0 0 10px 0;
-  color: var(--light-accent);
   font-size: 1.3rem;
+}
+
+.cert-content h3 a {
+  color: var(--light-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cert-content h3 a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .cert-issuer {
@@ -939,9 +949,115 @@ h2::after {
 
 footer {
   background-color: var(--secondary-bg);
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
   color: var(--text-secondary);
+  border-top: 2px solid var(--accent-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-resume-section {
+  text-align: center;
+}
+
+.footer-resume-section h3 {
+  color: var(--light-accent);
+  font-size: 1.2rem;
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-resume-section h3 i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.footer-resume-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--light-accent) 100%);
+  color: var(--primary-bg);
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.footer-download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+}
+
+.footer-download-btn i {
+  font-size: 1rem;
+}
+
+.footer-update-note {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 10px 0 0 0;
+  font-style: italic;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--light-accent) 100%);
+  color: var(--primary-bg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+}
+
+.scroll-to-top i {
+  animation: bounceUp 2s infinite;
+}
+
+@keyframes bounceUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
 @media (max-width: 768px) {
