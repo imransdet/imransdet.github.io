@@ -20,19 +20,23 @@ body {
 /* Sticky Header */
 .sticky-header {
   position: fixed;
-  top: -80px;
+  top: -100px;
   left: 0;
   width: 100%;
   background: linear-gradient(135deg, var(--secondary-bg) 0%, rgba(30, 30, 30, 0.98) 100%);
   backdrop-filter: blur(10px);
-  z-index: 999;
+  z-index: 9999;
   border-bottom: 2px solid var(--accent-color);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  transition: top 0.3s ease;
+  transition: top 0.4s ease-in-out;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .sticky-header.show {
   top: 0;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .sticky-container {
