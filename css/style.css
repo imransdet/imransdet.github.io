@@ -155,10 +155,22 @@ h2::after {
   margin-bottom: 10px;
 }
 
+.skills-category {
+  margin-bottom: 30px;
+}
+
+.category-title {
+  color: var(--light-accent);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .skill {
@@ -167,6 +179,13 @@ h2::after {
   border-radius: 20px;
   border: 1px solid var(--accent-color);
   color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
 }
 
 .highlight {
