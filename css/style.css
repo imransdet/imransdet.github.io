@@ -187,10 +187,14 @@ h2::after {
 }
 
 .category-icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--accent-color);
   min-width: 30px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .category-title {
@@ -199,6 +203,9 @@ h2::after {
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.5px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
 }
 
 .skills-container {
@@ -242,6 +249,38 @@ h2::after {
 @keyframes iconBounce {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
+}
+
+/* AI Category Special Styling */
+.ai-category {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.15) 0%, rgba(30, 30, 30, 0.8) 100%);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.ai-category:hover {
+  border-color: rgba(138, 43, 226, 0.8);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.4);
+}
+
+.ai-category .category-icon {
+  color: #BA55D3;
+}
+
+.ai-category .category-title {
+  color: #DDA0DD;
+}
+
+.ai-category .skill {
+  border-color: rgba(138, 43, 226, 0.5);
+}
+
+.ai-category .skill i {
+  color: #BA55D3;
+}
+
+.ai-category .skill:hover {
+  background: linear-gradient(135deg, #BA55D3 0%, #DDA0DD 100%);
+  border-color: #DDA0DD;
 }
 
 /* Responsive adjustments for skills grid */
