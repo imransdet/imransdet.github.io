@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Al Imran - QA Engineering Professional</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/style-v2.css">
 </head>
 <body>
 <!-- Sticky Header -->
@@ -23,45 +23,72 @@
   </div>
 </div>
 
-<header>
+<!-- Hero Section with Photo -->
+<section class="hero-section">
   <div class="container">
-    <div class="header-content">
-      <h1>AL IMRAN</h1>
-      <div class="header-subtitle">
-        <span class="badge-pill"><i class="fas fa-certificate"></i> ISTQB Certified Tester</span>
-        <span class="badge-pill"><i class="fas fa-robot"></i> Test Automation Expert</span>
-        <span class="badge-pill experience-badge"><i class="fas fa-award"></i> 12+ Years Experience</span>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-name">AL IMRAN</h1>
+        <p class="hero-title">
+          <span class="highlight">ISTQB Certified</span> QA Engineering Professional<br>
+          with <span class="highlight">12+ Years</span> of Excellence in Test Automation & Quality Assurance
+        </p>
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <i class="fas fa-certificate"></i> ISTQB Certified
+          </span>
+          <span class="hero-badge">
+            <i class="fas fa-robot"></i> Automation Expert
+          </span>
+          <span class="hero-badge">
+            <i class="fas fa-award"></i> 12+ Years
+          </span>
+        </div>
+        <div class="hero-cta">
+          <a href="#about" class="btn-primary">
+            <i class="fas fa-user"></i> View Profile
+          </a>
+          <a href="resume/Al_Imran_QA_Engineer_Resume.pdf" download class="btn-secondary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card" onclick="copyToClipboard('+8801911833792')">
+            <i class="fas fa-phone"></i>
+            <span>+880 1911 833792</span>
+          </div>
+          <div class="contact-card" onclick="copyToClipboard('imranreee@gmail.com')">
+            <i class="fas fa-envelope"></i>
+            <span>imranreee@gmail.com</span>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Dhaka, Bangladesh</span>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.xing.com/profile/Al_Imran090879" target="_blank" class="social-link">
+            <i class="fab fa-xing"></i>
+          </a>
+          <a href="https://linkedin.com/in/al-imran-56675092" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/imransdet" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="contact-info">
-      <div class="contact-item" onclick="copyToClipboard('+8801911833792')">
-        <i class="fas fa-phone"></i>
-        <span>+880 1911 833792</span>
-        <span class="copy-tooltip">Click to copy</span>
+      <div class="hero-photo">
+        <div class="photo-container">
+          <div class="photo-glow"></div>
+          <div class="photo-frame">
+            <img src="img/c3no_5jmm_210819.jpg" alt="Al Imran - QA Engineering Professional">
+          </div>
+        </div>
       </div>
-      <div class="contact-item" onclick="copyToClipboard('imranreee@gmail.com')">
-        <i class="fas fa-envelope"></i>
-        <span>imranreee@gmail.com</span>
-        <span class="copy-tooltip">Click to copy</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Dhaka, Bangladesh</span>
-      </div>
-    </div>
-    <div class="social-links">
-      <a href="https://www.xing.com/profile/Al_Imran090879" target="_blank" class="social-link">
-        <i class="fab fa-xing"></i> XING
-      </a>
-      <a href="https://linkedin.com/in/al-imran-56675092" target="_blank" class="social-link">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/imransdet" target="_blank" class="social-link">
-        <i class="fab fa-github"></i> GitHub
-      </a>
     </div>
   </div>
-</header>
+</section>
 
 <script>
   function copyToClipboard(text) {
@@ -77,56 +104,44 @@
 
 <main class="container">
   <section id="about">
-    <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
-    <div class="summary-card">
-      <p class="summary-text">
-        <span class="highlight-text">ISTQB certified QA Engineer</span> with <strong>12+ years</strong> of comprehensive experience in both manual and automation testing across diverse domains including <strong>Fintech, Real Estate, IoT, and Enterprise Software</strong>. 
+    <h2 class="section-title">Professional Summary</h2>
+    <div class="card">
+      <p style="font-size: 1.15rem; line-height: 1.9; color: var(--text-secondary); margin-bottom: 25px;">
+        <strong style="color: var(--accent-blue); font-size: 1.2rem;">ISTQB certified QA Engineer</strong> with <strong style="color: var(--text-primary);">12+ years</strong> of comprehensive experience in both manual and automation testing across diverse domains including <strong style="color: var(--text-primary);">Fintech, Real Estate, IoT, and Enterprise Software</strong>.
       </p>
-      <p class="summary-text">
-        Proven expertise in building <strong>robust automation frameworks</strong>, implementing <strong>CI/CD pipelines</strong>, and driving continuous testing initiatives to ensure high-quality software delivery. Successfully led QA teams and reduced regression testing time by <strong>60%</strong> through strategic automation implementation.
+      <p style="font-size: 1.15rem; line-height: 1.9; color: var(--text-secondary);">
+        Proven expertise in building <strong style="color: var(--text-primary);">robust automation frameworks</strong>, implementing <strong style="color: var(--text-primary);">CI/CD pipelines</strong>, and driving continuous testing initiatives to ensure high-quality software delivery. Successfully led QA teams and reduced regression testing time by <strong style="color: var(--accent-blue);">60%</strong> through strategic automation implementation.
       </p>
-      <div class="summary-stats">
-        <div class="stat-item">
-          <i class="fas fa-calendar-check"></i>
-          <div class="stat-content">
-            <span class="stat-number">12+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Years Experience</span>
         </div>
-        <div class="stat-item">
-          <i class="fas fa-project-diagram"></i>
-          <div class="stat-content">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">Projects Delivered</span>
-          </div>
+        <div class="stat-card">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">Projects Delivered</span>
         </div>
-        <div class="stat-item">
-          <i class="fas fa-users"></i>
-          <div class="stat-content">
-            <span class="stat-number">6+</span>
-            <span class="stat-label">Companies Served</span>
-          </div>
+        <div class="stat-card">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Companies Served</span>
         </div>
-        <div class="stat-item">
-          <i class="fas fa-rocket"></i>
-          <div class="stat-content">
-            <span class="stat-number">60%</span>
-            <span class="stat-label">Time Reduction</span>
-          </div>
+        <div class="stat-card">
+          <span class="stat-number">60%</span>
+          <span class="stat-label">Time Reduction</span>
         </div>
       </div>
     </div>
   </section>
 
   <section id="highlights">
-    <h2><i class="fas fa-star"></i> Key Highlights</h2>
+    <h2 class="section-title">Key Highlights</h2>
     <div class="highlights-grid">
       <div class="highlight-card">
         <div class="highlight-icon">
           <i class="fas fa-bolt"></i>
         </div>
         <h3>Automation Excellence</h3>
-        <p>Reduced regression testing time by <strong>60%</strong> through strategic automation implementation and framework development.</p>
+        <p>Reduced regression testing time by <strong style="color: var(--accent-blue);">60%</strong> through strategic automation implementation and framework development.</p>
       </div>
       
       <div class="highlight-card">
@@ -196,117 +211,107 @@
   </section>
 
   <section id="skills">
-    <h2>
-      <a href="https://github.com/imransdet" target="_blank" class="skills-header-link">
-        <i class="fas fa-code"></i> Technical Skills - Hands On
-        <i class="fas fa-external-link-alt"></i>
+    <h2 class="section-title">
+      <a href="https://github.com/imransdet" target="_blank" style="text-decoration: none; color: inherit;">
+        Technical Skills - Hands On <i class="fas fa-external-link-alt" style="font-size: 1.5rem; margin-left: 10px;"></i>
       </a>
     </h2>
     
     <div class="skills-grid">
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-laptop-code category-icon"></i>
-          <h3 class="category-title">Programming Languages</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fab fa-java"></i> Java</span>
-          <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
-          <span class="skill"><i class="fas fa-database"></i> SQL</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-robot category-icon"></i>
-          <h3 class="category-title">Test Automation Tools</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-cogs"></i> Selenium</span>
-          <span class="skill"><i class="fas fa-mobile-alt"></i> Appium</span>
-          <span class="skill"><i class="fas fa-circle-notch"></i> Cypress</span>
-          <span class="skill"><i class="fas fa-play-circle"></i> Playwright</span>
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-laptop-code"></i> Programming Languages
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+          <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
         </div>
       </div>
 
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-network-wired category-icon"></i>
-          <h3 class="category-title">API Testing</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-plug"></i> REST Assured</span>
-          <span class="skill"><i class="fas fa-paper-plane"></i> Postman Scripting</span>
-          <span class="skill"><i class="fas fa-running"></i> Newman</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-tachometer-alt category-icon"></i>
-          <h3 class="category-title">Performance Testing</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-chart-line"></i> Grafana k6</span>
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-robot"></i> Test Automation Tools
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fas fa-cogs"></i> Selenium</span>
+          <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Appium</span>
+          <span class="skill-tag"><i class="fas fa-circle-notch"></i> Cypress</span>
+          <span class="skill-tag"><i class="fas fa-play-circle"></i> Playwright</span>
         </div>
       </div>
 
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-layer-group category-icon"></i>
-          <h3 class="category-title">Test Frameworks & Design Patterns</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-vial"></i> TestNG</span>
-          <span class="skill"><i class="fas fa-sitemap"></i> Page Object Model</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-chart-bar category-icon"></i>
-          <h3 class="category-title">Test Reporting</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-file-alt"></i> Extent Report</span>
-          <span class="skill"><i class="fas fa-clipboard-list"></i> Allure Report</span>
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-network-wired"></i> API Testing
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fas fa-plug"></i> REST Assured</span>
+          <span class="skill-tag"><i class="fas fa-paper-plane"></i> Postman Scripting</span>
+          <span class="skill-tag"><i class="fas fa-running"></i> Newman</span>
         </div>
       </div>
 
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-infinity category-icon"></i>
-          <h3 class="category-title">CI/CD & DevOps</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fab fa-jenkins"></i> Jenkins</span>
-          <span class="skill"><i class="fab fa-github"></i> GitHub Actions</span>
-          <span class="skill"><i class="fas fa-code-branch"></i> CI/CD</span>
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-tachometer-alt"></i> Performance Testing
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fas fa-chart-line"></i> Grafana k6</span>
         </div>
       </div>
 
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-tasks category-icon"></i>
-          <h3 class="category-title">Test & Project Management</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fab fa-jira"></i> JIRA</span>
-          <span class="skill"><i class="fas fa-check-double"></i> Zephyr</span>
-          <span class="skill"><i class="fas fa-microscope"></i> Xray</span>
-          <span class="skill"><i class="fas fa-clipboard-check"></i> Qase.io</span>
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-layer-group"></i> Test Frameworks & Design Patterns
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fas fa-vial"></i> TestNG</span>
+          <span class="skill-tag"><i class="fas fa-sitemap"></i> Page Object Model</span>
         </div>
       </div>
 
-      <div class="skills-category ai-category">
-        <div class="category-header">
-          <i class="fas fa-brain category-icon"></i>
-          <h3 class="category-title">AI-Driven Testing & Automation</h3>
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-chart-bar"></i> Test Reporting
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fas fa-file-alt"></i> Extent Report</span>
+          <span class="skill-tag"><i class="fas fa-clipboard-list"></i> Allure Report</span>
         </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-play-circle"></i> Playwright MCP Server</span>
-          <span class="skill"><i class="fas fa-vials"></i> TestRail</span>
-          <span class="skill"><i class="fas fa-magic"></i> TestRigor</span>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-infinity"></i> CI/CD & DevOps
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</span>
+          <span class="skill-tag"><i class="fab fa-github"></i> GitHub Actions</span>
+          <span class="skill-tag"><i class="fas fa-code-branch"></i> CI/CD</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-tasks"></i> Test & Project Management
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fab fa-jira"></i> JIRA</span>
+          <span class="skill-tag"><i class="fas fa-check-double"></i> Zephyr</span>
+          <span class="skill-tag"><i class="fas fa-microscope"></i> Xray</span>
+          <span class="skill-tag"><i class="fas fa-clipboard-check"></i> Qase.io</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-brain"></i> AI-Driven Testing & Automation
+        </h3>
+        <div class="skills-list">
+          <span class="skill-tag"><i class="fas fa-play-circle"></i> Playwright MCP Server</span>
+          <span class="skill-tag"><i class="fas fa-vials"></i> TestRail</span>
+          <span class="skill-tag"><i class="fas fa-magic"></i> TestRigor</span>
         </div>
       </div>
     </div>
@@ -314,19 +319,20 @@
 
 
   <section id="experience">
-    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+    <h2 class="section-title">Professional Experience</h2>
     <div class="timeline">
       <!-- Current Position -->
-      <div class="timeline-item left current-position">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>
-            <a href="https://www.ad-group.com.au/" target="_blank" rel="noopener noreferrer">
+          <h3 style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 15px; color: var(--text-primary);">
+            <a href="https://www.ad-group.com.au/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); text-decoration: none;">
               <i class="fas fa-building"></i> AD Group Pty Ltd
             </a>
           </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Australia (Remote)</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> Aug 2024 - Present <span class="current-badge">Current</span></p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Lead QA Engineer</p>
+          <p style="color: var(--text-secondary); margin-bottom: 10px;"><i class="fas fa-map-marker-alt"></i> Australia (Remote)</p>
+          <p style="color: var(--text-secondary); margin-bottom: 15px;"><i class="far fa-calendar-alt"></i> Aug 2024 - Present <span style="background: var(--primary-gradient); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; margin-left: 10px;">Current</span></p>
+          <p style="color: var(--text-primary); font-weight: 600; font-size: 1.1rem;"><i class="fas fa-user-tie"></i> Lead QA Engineer</p>
           <!--<ul>
             <li>Developing API and Web Automation Test Cases</li>
             <li>Tracking Bug Lifecycle</li>
@@ -480,7 +486,7 @@
   </section>
 
   <section id="projects">
-    <h2>Notable Projects</h2>
+    <h2 class="section-title">Notable Projects</h2>
 
     <div class="current-projects-label">
       <span class="badge-current">Current Projects</span>
@@ -574,7 +580,7 @@
   </section>
 
   <section id="education">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <h2 class="section-title">Education</h2>
     <div class="education-card">
       <div class="education-icon">
         <i class="fas fa-university"></i>
@@ -596,7 +602,7 @@
   </section>
 
   <section id="certifications">
-    <h2><i class="fas fa-certificate"></i> Professional Certifications</h2>
+    <h2 class="section-title">Professional Certifications</h2>
     <div class="certifications-grid">
       <div class="certification-card">
         <div class="cert-icon">
