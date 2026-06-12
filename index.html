@@ -3,707 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Al Imran - QA Engineering Professional</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <title>Al Imran — ISTQB Certified QA Automation Engineer</title>
+  <meta name="description" content="Al Imran — ISTQB Certified QA Automation Engineer with 10+ years of experience in Playwright E2E automation, API testing and CI/CD. Based in Essen, Germany.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/terminal.css">
 </head>
 <body>
-<!-- Sticky Header -->
-<div id="stickyHeader" class="sticky-header">
-  <div class="sticky-container">
-    <div class="sticky-name">AL IMRAN</div>
-    <div class="sticky-nav">
-      <a href="#about">About</a>
-      <a href="#highlights">Highlights</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">imran@qa:~$<span class="cursor">_</span></span>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#opensource">open-source</a>
+      <a href="#education">education</a>
+      <a href="resume/Resume_AlImran_2026.pdf" target="_blank">resume.pdf</a>
     </div>
   </div>
-</div>
+</nav>
 
-<header>
+<header class="hero">
   <div class="container">
-    <div class="header-content">
-      <h1>AL IMRAN</h1>
-      <div class="header-subtitle">
-        <span class="badge-pill"><i class="fas fa-certificate"></i> ISTQB Certified Tester</span>
-        <span class="badge-pill"><i class="fas fa-robot"></i> Test Automation Expert</span>
-        <span class="badge-pill experience-badge"><i class="fas fa-award"></i> 12+ Years Experience</span>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="comment">ISTQB Certified QA Automation Engineer</p>
+        <h1>AL <span class="accent">IMRAN</span></h1>
+        <p class="tagline">
+          <strong>10+ years</strong> building test automation that ships quality software —
+          Playwright E2E, API testing &amp; CI/CD across <strong>fintech, IoT and enterprise</strong> platforms.
+        </p>
+
+        <div class="meta-block">
+          <div class="line"><span class="key">location:</span> <span class="val">Essen, Germany <span class="comment">valid work visa</span></span></div>
+          <div class="line"><span class="key">email:</span> <span class="val"><a href="mailto:imranreee@gmail.com">imranreee@gmail.com</a></span></div>
+          <div class="line"><span class="key">phone:</span> <span class="val"><a href="tel:+491791560104">(+49) 179 1560104</a></span></div>
+          <div class="line"><span class="key">github:</span> <span class="val"><a href="https://github.com/imransdet" target="_blank" rel="noopener">github.com/imransdet</a></span></div>
+          <div class="line"><span class="key">linkedin:</span> <span class="val"><a href="https://linkedin.com/in/imransdet" target="_blank" rel="noopener">linkedin.com/in/imransdet</a></span></div>
+          <div class="line"><span class="key">xing:</span> <span class="val"><a href="https://www.xing.com/profile/Al_Imran090879" target="_blank" rel="noopener">xing.com/profile/Al_Imran090879</a></span></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="resume/Resume_AlImran_2026.pdf" download>↓ Download Resume</a>
+          <a class="btn secondary" href="https://github.com/imransdet" target="_blank" rel="noopener">View GitHub →</a>
+        </div>
       </div>
-    </div>
-    <div class="contact-info">
-      <div class="contact-item" onclick="copyToClipboard('+8801911833792')">
-        <i class="fas fa-phone"></i>
-        <span>+880 1911 833792</span>
-        <span class="copy-tooltip">Click to copy</span>
-      </div>
-      <div class="contact-item" onclick="copyToClipboard('imranreee@gmail.com')">
-        <i class="fas fa-envelope"></i>
-        <span>imranreee@gmail.com</span>
-        <span class="copy-tooltip">Click to copy</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Dhaka, Bangladesh</span>
-      </div>
-    </div>
-    <div class="social-links">
-      <a href="https://www.xing.com/profile/Al_Imran090879" target="_blank" class="social-link">
-        <i class="fab fa-xing"></i> XING
-      </a>
-      <a href="https://linkedin.com/in/al-imran-56675092" target="_blank" class="social-link">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/imransdet" target="_blank" class="social-link">
-        <i class="fab fa-github"></i> GitHub
-      </a>
     </div>
   </div>
 </header>
 
-<script>
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-      const tooltip = event.currentTarget.querySelector('.copy-tooltip');
-      tooltip.textContent = 'Copied!';
-      setTimeout(() => {
-        tooltip.textContent = 'Click to copy';
-      }, 2000);
-    });
-  }
-</script>
-
-<main class="container">
+<main>
   <section id="about">
-    <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
-    <div class="summary-card">
-      <p class="summary-text">
-        <span class="highlight-text">ISTQB certified QA Engineer</span> with <strong>12+ years</strong> of comprehensive experience in both manual and automation testing across diverse domains including <strong>Fintech, Real Estate, IoT, and Enterprise Software</strong>. 
+    <div class="container summary">
+      <h2 class="section-title">cat about.txt</h2>
+      <p>
+        ISTQB Certified QA Automation Engineer with <strong>10+ years of experience</strong> specialising in
+        <strong>Playwright-based E2E automation</strong>, API testing and CI/CD pipeline integration.
       </p>
-      <p class="summary-text">
-        Proven expertise in building <strong>robust automation frameworks</strong>, implementing <strong>CI/CD pipelines</strong>, and driving continuous testing initiatives to ensure high-quality software delivery. Successfully led QA teams and reduced regression testing time by <strong>60%</strong> through strategic automation implementation.
+      <p>
+        Proven track record of building automation frameworks from scratch, achieving
+        <strong>100% API test coverage</strong>, and reducing regression cycles by up to <strong>60%</strong>.
+        Experienced Lead QA Engineer across fintech, IoT and enterprise platforms.
       </p>
-      <div class="summary-stats">
-        <div class="stat-item">
-          <i class="fas fa-calendar-check"></i>
-          <div class="stat-content">
-            <span class="stat-number">12+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-        </div>
-        <div class="stat-item">
-          <i class="fas fa-project-diagram"></i>
-          <div class="stat-content">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">Projects Delivered</span>
-          </div>
-        </div>
-        <div class="stat-item">
-          <i class="fas fa-users"></i>
-          <div class="stat-content">
-            <span class="stat-number">6+</span>
-            <span class="stat-label">Companies Served</span>
-          </div>
-        </div>
-        <div class="stat-item">
-          <i class="fas fa-rocket"></i>
-          <div class="stat-content">
-            <span class="stat-number">60%</span>
-            <span class="stat-label">Time Reduction</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="highlights">
-    <h2><i class="fas fa-star"></i> Key Highlights</h2>
-    <div class="highlights-grid">
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-bolt"></i>
-        </div>
-        <h3>Automation Excellence</h3>
-        <p>Reduced regression testing time by <strong>60%</strong> through strategic automation implementation and framework development.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-tachometer-alt"></i>
-        </div>
-        <h3>Performance Testing</h3>
-        <p>Conducted comprehensive performance testing using Grafana k6 to uncover and resolve critical system bottlenecks.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-code"></i>
-        </div>
-        <h3>Full-Stack Testing</h3>
-        <p>Designed and developed automation solutions for API, mobile, and web applications across multiple platforms.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-check-circle"></i>
-        </div>
-        <h3>100% API Coverage</h3>
-        <p>Achieved complete API test coverage for fintech systems, ensuring robust and secure financial transactions.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-users-cog"></i>
-        </div>
-        <h3>Team Leadership</h3>
-        <p>Built and led high-performing QA teams from scratch, driving efficient and quality-focused software releases.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-lightbulb"></i>
-        </div>
-        <h3>Early Detection</h3>
-        <p>Proactively analyzed requirements to enable shift-left testing approach and early defect detection.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-infinity"></i>
-        </div>
-        <h3>CI/CD Integration</h3>
-        <p>Implemented automated testing in CI/CD pipelines using Jenkins and GitHub Actions for continuous quality assurance.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <h3>Quick Learner</h3>
-        <p>Rapidly adapt to new tools, technologies, and domains with minimal learning curve and immediate impact.</p>
-      </div>
-      
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-tasks"></i>
-        </div>
-        <h3>Test Planning & Closure</h3>
-        <p>Expert in accurate test effort estimation, timeline planning, and streamlining test closure processes with comprehensive reports and continuous improvement documentation.</p>
+      <div class="stats">
+        <div class="stat"><span class="num">10+</span><span class="label">years experience</span></div>
+        <div class="stat"><span class="num">100%</span><span class="label">API test coverage</span></div>
+        <div class="stat"><span class="num">60%</span><span class="label">faster regression</span></div>
+        <div class="stat"><span class="num">8+</span><span class="label">companies &amp; teams</span></div>
       </div>
     </div>
   </section>
 
   <section id="skills">
-    <h2>
-      <a href="https://github.com/imransdet" target="_blank" class="skills-header-link">
-        <i class="fas fa-code"></i> Technical Skills - Hands On
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </h2>
-    
-    <div class="skills-grid">
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-laptop-code category-icon"></i>
-          <h3 class="category-title">Programming Languages</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fab fa-java"></i> Java</span>
-          <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
-          <span class="skill"><i class="fas fa-database"></i> SQL</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-robot category-icon"></i>
-          <h3 class="category-title">Test Automation Tools</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-cogs"></i> Selenium</span>
-          <span class="skill"><i class="fas fa-mobile-alt"></i> Appium</span>
-          <span class="skill"><i class="fas fa-circle-notch"></i> Cypress</span>
-          <span class="skill"><i class="fas fa-play-circle"></i> Playwright</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-network-wired category-icon"></i>
-          <h3 class="category-title">API Testing</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-plug"></i> REST Assured</span>
-          <span class="skill"><i class="fas fa-paper-plane"></i> Postman Scripting</span>
-          <span class="skill"><i class="fas fa-running"></i> Newman</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-tachometer-alt category-icon"></i>
-          <h3 class="category-title">Performance Testing</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-chart-line"></i> Grafana k6</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-layer-group category-icon"></i>
-          <h3 class="category-title">Test Frameworks & Design Patterns</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-vial"></i> TestNG</span>
-          <span class="skill"><i class="fas fa-sitemap"></i> Page Object Model</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-chart-bar category-icon"></i>
-          <h3 class="category-title">Test Reporting</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-file-alt"></i> Extent Report</span>
-          <span class="skill"><i class="fas fa-clipboard-list"></i> Allure Report</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-infinity category-icon"></i>
-          <h3 class="category-title">CI/CD & DevOps</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fab fa-jenkins"></i> Jenkins</span>
-          <span class="skill"><i class="fab fa-github"></i> GitHub Actions</span>
-          <span class="skill"><i class="fas fa-code-branch"></i> CI/CD</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <div class="category-header">
-          <i class="fas fa-tasks category-icon"></i>
-          <h3 class="category-title">Test & Project Management</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fab fa-jira"></i> JIRA</span>
-          <span class="skill"><i class="fas fa-check-double"></i> Zephyr</span>
-          <span class="skill"><i class="fas fa-microscope"></i> Xray</span>
-          <span class="skill"><i class="fas fa-clipboard-check"></i> Qase.io</span>
-        </div>
-      </div>
-
-      <div class="skills-category ai-category">
-        <div class="category-header">
-          <i class="fas fa-brain category-icon"></i>
-          <h3 class="category-title">AI-Driven Testing & Automation</h3>
-        </div>
-        <div class="skills-container">
-          <span class="skill"><i class="fas fa-play-circle"></i> Playwright MCP Server</span>
-          <span class="skill"><i class="fas fa-vials"></i> TestRail</span>
-          <span class="skill"><i class="fas fa-magic"></i> TestRigor</span>
-        </div>
+    <div class="container">
+      <h2 class="section-title">cat skills.json</h2>
+      <div class="skills-table">
+        <div class="row"><span class="skill-key">test_automation</span><span class="skill-val"><em>Playwright (primary)</em>, Cypress, Selenium, Appium</span></div>
+        <div class="row"><span class="skill-key">languages</span><span class="skill-val">TypeScript / JavaScript, Java, Python, SQL</span></div>
+        <div class="row"><span class="skill-key">api_automation</span><span class="skill-val">Playwright API, REST Assured, Postman, Newman</span></div>
+        <div class="row"><span class="skill-key">performance</span><span class="skill-val">Grafana K6</span></div>
+        <div class="row"><span class="skill-key">ci_cd</span><span class="skill-val">GitHub Actions, Jenkins, GitLab CI, Azure DevOps</span></div>
+        <div class="row"><span class="skill-key">ai_testing</span><span class="skill-val">Claude, Agent + LLM, Playwright MCP, Testim, Testrigor, BrowserStack</span></div>
+        <div class="row"><span class="skill-key">frameworks</span><span class="skill-val">TestNG, JUnit, Page Object Model</span></div>
+        <div class="row"><span class="skill-key">test_management</span><span class="skill-val">Jira, Qase, Zephyr, Xray, TestRail</span></div>
+        <div class="row"><span class="skill-key">reporting</span><span class="skill-val">Allure, Extent Reports, TestNG Reports</span></div>
       </div>
     </div>
   </section>
 
-
   <section id="experience">
-    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-    <div class="timeline">
-      <!-- Current Position -->
-      <div class="timeline-item left current-position">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://www.ad-group.com.au/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> AD Group Pty Ltd
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Australia (Remote)</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> Aug 2024 - Present <span class="current-badge">Current</span></p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Lead QA Engineer</p>
-          <!--<ul>
-            <li>Developing API and Web Automation Test Cases</li>
-            <li>Tracking Bug Lifecycle</li>
-            <li>Developing and performing Performance Tests</li>
-            <li>Maintaining the RTM</li>
-            <li>Building the QA Team</li>
-          </ul>-->
-        </div>
+    <div class="container">
+      <h2 class="section-title">git log --career</h2>
+
+      <div class="job current">
+        <h3>Lead QA Engineer — <a href="https://www.ad-group.com.au/" target="_blank" rel="noopener">AD Group Pty Ltd</a><span class="badge">CURRENT</span></h3>
+        <p class="job-meta">Aug 2024 – Present · Australia (Remote)</p>
+        <ul>
+          <li>Built Playwright-based API &amp; web automation framework; reduced manual regression by ~50%</li>
+          <li>Strengthened pre-release defect detection across multiple product lines</li>
+          <li>Introduced Grafana K6 performance testing to improve system stability</li>
+          <li>Built and mentored QA team; defined QA standards and best practices</li>
+        </ul>
       </div>
 
-      <!-- ABG Technologies -->
-      <div class="timeline-item right">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://abgpocket.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> ABG Technologies Ltd
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> March 2023 - Aug 2024</p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Lead QA Engineer</p>
-          <!--<ul>
-            <li>Successfully built the QA team</li>
-            <li>Covered RTM for the entire fintech system</li>
-            <li>Launched the first live deployment of POCKET eWallet</li>
-            <li>Covered 100% of API testing</li>
-            <li>Did performance testing using Grafana k6</li>
-            <li>Reduced regression testing time by 60% through automation</li>
-          </ul>-->
-        </div>
+      <div class="job">
+        <h3>Lead QA Engineer — <a href="https://abgpocket.com/" target="_blank" rel="noopener">ABG Technologies Ltd</a></h3>
+        <p class="job-meta">Mar 2023 – Aug 2024 · Dhaka, Bangladesh</p>
+        <ul>
+          <li>Led QA for microservices-based fintech (PSP eWallet) platform</li>
+          <li>Achieved 100% API test coverage across 8+ microservices using Playwright &amp; REST Assured</li>
+          <li>Implemented load &amp; stress testing with Grafana K6; reduced regression cycle by 60%</li>
+          <li>Built and scaled QA team to support full fintech ecosystem</li>
+        </ul>
       </div>
 
-      <!-- SuperTal -->
-      <div class="timeline-item left">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://www.supertal.io/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> SuperTal Ltd
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Singapore (Remote)</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> June 2022 - Nov 2022</p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Sr. QA Engineer</p>
-          <!--<ul>
-            <li>Automated 70% of test cases, reducing total execution time by 50%</li>
-            <li>Reduced critical defects through effective bug tracking</li>
-            <li>Aligned documentation with project goals</li>
-            <li>Facilitated strategic decision-making with comprehensive test plans</li>
-          </ul>-->
-        </div>
+      <div class="job">
+        <h3>Senior QA Engineer — <a href="https://www.supertal.io/" target="_blank" rel="noopener">SuperTal Ltd SG</a> &amp; <a href="https://www.setschedule.com/" target="_blank" rel="noopener">SetSchedule USA</a></h3>
+        <p class="job-meta">Nov 2021 – Nov 2022 · Remote</p>
+        <ul>
+          <li>Designed and maintained Playwright &amp; Selenium API/web automation frameworks</li>
+          <li>Automated 70% of regression suite; reduced execution time by 50%</li>
+          <li>Managed end-to-end QA lifecycle and release validation</li>
+        </ul>
       </div>
 
-      <!-- SetSchedule -->
-      <div class="timeline-item right">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://www.setschedule.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> SetSchedule
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> USA (Remote)</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> Nov 2021 - June 2022</p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Sr. QA Engineer</p>
-          <!--<ul>
-            <li>Development, execution, and maintenance of automation test cases</li>
-            <li>Managed Bug Lifecycle</li>
-            <li>Ensured end to end Quality Assurance Activity</li>
-            <li>Test Planning</li>
-          </ul>-->
-        </div>
+      <div class="job">
+        <h3>Senior QA Engineer — <a href="https://www.me-solshare.com/" target="_blank" rel="noopener">ME SOLshare Ltd</a></h3>
+        <p class="job-meta">Sep 2020 – Aug 2021 · Dhaka, Bangladesh</p>
+        <ul>
+          <li>Led QA for IoT-based solar energy distribution platform (SOLclock &amp; SOLGrid apps)</li>
+          <li>Developed automation and manual test strategy; managed QA team and release quality</li>
+        </ul>
       </div>
 
-      <!-- ME SOLshare -->
-      <div class="timeline-item left">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://www.me-solshare.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> ME SOLshare Ltd
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> Sep 2020 - Aug 2021</p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Sr. QA Engineer</p>
-          <!--<ul>
-            <li>Developed Automation and Manual test cases for IoT based application</li>
-            <li>Performed Functional and Non-Functional Testing</li>
-            <li>Managed Bug Lifecycle</li>
-            <li>Managed Team</li>
-          </ul>-->
-        </div>
+      <div class="job">
+        <h3>Senior QA Engineer — <a href="https://bjitgroup.com/" target="_blank" rel="noopener">BJIT Ltd</a></h3>
+        <p class="job-meta">Oct 2018 – Aug 2020 · Dhaka, Bangladesh</p>
+        <ul>
+          <li>Designed automation test suites for Dassault CATIA v6 (3DEXPERIENCE PLM) and Siemens PLM</li>
+          <li>Prepared test plans, reports and UAT coordination; integration and regression testing</li>
+        </ul>
       </div>
 
-      <!-- BJIT -->
-      <div class="timeline-item right">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://bjitgroup.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> BJIT Group
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> Oct 2018 - Aug 2020</p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Sr. QA Engineer</p>
-          <!--<ul>
-            <li>Developed Automation Test Cases for Web App</li>
-            <li>Managed Bug Lifecycle</li>
-          </ul>-->
-        </div>
+      <div class="job">
+        <h3>QA Engineer — <a href="https://w3engineers.com/" target="_blank" rel="noopener">W3 Engineers Ltd</a></h3>
+        <p class="job-meta">Dec 2016 – Sep 2018 · Dhaka, Bangladesh</p>
+        <ul>
+          <li>Automated Android regression suite; managed full defect lifecycle and release validation</li>
+        </ul>
       </div>
 
-      <!-- W3 Engineers -->
-      <div class="timeline-item left">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://w3engineers.com/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> W3 Engineers Ltd
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> Dec 2016 - Sep 2018</p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> QA Engineer</p>
-          <!--<ul>
-            <li>Reduced Regression execution time by automating Android Application</li>
-            <li>Managed Bug Lifecycle</li>
-            <li>Conducted Integration, System, Regression, Retesting, and UAT</li>
-          </ul>-->
-        </div>
-      </div>
-
-      <!-- Samsung -->
-      <div class="timeline-item right">
-        <div class="timeline-content">
-          <h3>
-            <a href="https://research.samsung.com/srbd" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-building"></i> Samsung R&D Institute Bangladesh
-            </a>
-          </h3>
-          <p class="company-location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-          <p class="date"><i class="far fa-calendar-alt"></i> July 2011 - May 2015</p>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Jr. Engineer (QA)</p>
-          <span class="role-separator"><i class="fas fa-arrow-up"></i></span>
-          <p class="role-title"><i class="fas fa-user-tie"></i> Technical Associate (QA)</p>
-          <!--<ul>
-            <li>Managed bug lifecycle for software reliability</li>
-            <li>Enhanced software quality with detailed Test Cases</li>
-            <li>Conducted UAT, Exploratory, and Retesting</li>
-          </ul>-->
-        </div>
+      <div class="job">
+        <h3>Jr. Engineer (SQA) — <a href="https://research.samsung.com/srbd" target="_blank" rel="noopener">Samsung R&amp;D Institute BD</a></h3>
+        <p class="job-meta">Jul 2011 – May 2015 · Dhaka, Bangladesh</p>
+        <ul>
+          <li>System validation, UAT, exploratory and regression testing for Tizen OS across large-scale release cycles</li>
+          <li>Android OS (One UI) regression testing, retesting and UAT for Samsung Smart Phones</li>
+          <li>Managed defect lifecycle for OS-level features; part of 20+ member QA team</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section id="projects">
-    <h2>Notable Projects</h2>
-
-    <div class="current-projects-label">
-      <span class="badge-current">Current Projects</span>
-    </div>
-
-    <div class="timeline-content current-project" style="margin-bottom: 20px;">
-      <h3>
-        <a href="https://showcase.space/" target="_blank" rel="noopener noreferrer">
-          Showcase.space – Property Presentation Platform
-        </a>
-        <span class="project-badge">Live</span>
-        <span class="project-category-badge web">Web</span>
-      </h3>
-      <p>Innovative and immersive digital display suite software powering LED walls, immersion rooms, and interactive experiences for Australia's biggest property developers. Features include 3D buildings, virtual walkthroughs, and model lighting integration.</p>
-    </div>
-
-    <div class="timeline-content current-project" style="margin-bottom: 20px;">
-      <h3>
-        <a href="https://agent.leasey.com.au/" target="_blank" rel="noopener noreferrer">
-          Leasey – Commercial Lease Management
-        </a>
-        <span class="project-badge">Live</span>
-        <span class="project-category-badge web">Web</span>
-      </h3>
-      <p>Comprehensive commercial lease management platform designed to streamline property leasing processes, tenant management, and automated lease administration for commercial real estate agents.</p>
-    </div>
-
-    <div class="previous-projects-label">
-      <span class="badge-previous">Previous Projects</span>
-    </div>
-
-    <div class="timeline-content previous-project" style="margin-bottom: 20px;">
-      <h3>
-        <a href="https://play.google.com/store/apps/details?id=com.pocket.ewallet" target="_blank" rel="noopener noreferrer">
-          POCKET eWallet – Digital Wallet & Fintech
-        </a>
-        <span class="project-badge">Live</span>
-        <span class="project-category-badge mobile">Mobile</span>
-      </h3>
-      <p>Comprehensive digital wallet solution offering secure money transfers, bill payments, mobile recharges, and financial services. Built complete QA infrastructure, achieved 100% API test coverage, and reduced regression time by 60% through automation.</p>
-      <div class="project-links">
-        <a href="https://play.google.com/store/apps/details?id=com.pocket.ewallet" target="_blank" class="store-link">
-          <i class="fab fa-google-play"></i> Google Play
-        </a>
-        <a href="https://apps.apple.com/app/pocket-ewallet/id1234567890" target="_blank" class="store-link">
-          <i class="fab fa-apple"></i> App Store
-        </a>
+    <div class="container">
+      <h2 class="section-title">ls projects/</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3><a href="https://showcase.space/" target="_blank" rel="noopener">Showcase.space</a></h3>
+          <p class="tags">[proptech] [web] AD Group Pty Ltd</p>
+          <p>Immersive digital display suite with LED walls, 3D building visualisation and virtual walkthroughs for property developers. Designed Playwright-based API &amp; web automation framework; executed E2E validation of 3D presentation workflows.</p>
+        </div>
+        <div class="project">
+          <h3><a href="https://play.google.com/store/apps/details?id=com.pocket.ewallet" target="_blank" rel="noopener">POCKET eWallet (PSP)</a></h3>
+          <p class="tags">[fintech] [ios+android] ABG Technologies Ltd</p>
+          <p>Microservices-based digital wallet covering money transfers, bill payments and mobile recharges. Built full QA infrastructure with Playwright &amp; REST Assured; 100% API coverage across 8+ services and 60% faster regression via Grafana K6.</p>
+        </div>
+        <div class="project">
+          <h3><a href="https://www.tizen.org/" target="_blank" rel="noopener">Tizen OS &amp; Android (One UI)</a></h3>
+          <p class="tags">[mobile-os] Samsung R&amp;D Institute BD</p>
+          <p>OS-level QA across two major mobile platforms: system validation, UAT, exploratory and regression testing for Tizen OS release cycles and Android One UI on Samsung Smart Phones, within a 20+ member international QA team.</p>
+        </div>
+        <div class="project">
+          <h3><a href="https://www.3ds.com/" target="_blank" rel="noopener">Dassault CATIA v6 &amp; Siemens PLM</a></h3>
+          <p class="tags">[enterprise] [3d-cad/plm] BJIT Ltd</p>
+          <p>Enterprise-grade 3D product lifecycle management platforms. Performed integration, system and UAT testing; prepared structured test plans and validated cross-functional engineering workflows at scale.</p>
+        </div>
+        <div class="project">
+          <h3><a href="https://developer.tizen.org/development/tizen-studio/" target="_blank" rel="noopener">Tizen Studio IDE</a></h3>
+          <p class="tags">[developer-tools] Samsung R&amp;D Institute BD</p>
+          <p>Comprehensive development environment for Tizen native and web applications. Contributed to QA validation of IDE features and toolchain stability across device builds.</p>
+        </div>
+        <div class="project">
+          <h3><a href="https://agent.leasey.com.au/" target="_blank" rel="noopener">Leasey</a></h3>
+          <p class="tags">[proptech] [web] AD Group Pty Ltd</p>
+          <p>Commercial lease management platform streamlining property leasing, tenant management and automated lease administration for commercial real estate agents. Covered E2E and API test automation.</p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="timeline-content previous-project" style="margin-bottom: 20px;">
-      <h3>
-        <a href="https://www.tizen.org/" target="_blank" rel="noopener noreferrer">
-          TIZEN – OS by Samsung
-        </a>
-        <span class="project-badge">Live</span>
-        <span class="project-category-badge mobile">Mobile</span>
-      </h3>
-      <p>Open and flexible operating system built for mobile and connected device ecosystem. Contributed to quality assurance for Samsung's proprietary mobile operating system.</p>
-    </div>
+  <section id="opensource">
+    <div class="container">
+      <h2 class="section-title">gh repo list imransdet</h2>
 
-    <div class="timeline-content previous-project" style="margin-bottom: 20px;">
-      <h3>
-        <a href="https://developer.tizen.org/development/tizen-studio/" target="_blank" rel="noopener noreferrer">
-          Tizen Studio By Samsung
-        </a>
-        <span class="project-badge">Live</span>
-        <span class="project-category-badge web">Web</span>
-      </h3>
-      <p>Comprehensive development environment providing tools for creating Tizen native and web applications. Ensured quality through extensive testing of IDE features and development tools.</p>
-    </div>
+      <div class="repo-featured">
+        <h3><a href="https://github.com/imransdet/qa-assistant" target="_blank" rel="noopener">qa-assistant</a> <span class="stars">★ 11</span> <span class="tool">Claude Code</span> <span class="tool">Playwright MCP</span> <span class="lang">AI Agent</span></h3>
+        <p>Autonomous Senior QA Engineer agent that runs inside VS Code — give it a staging URL and a feature description, and it writes test cases, executes them in a real browser, finds bugs, files detailed Jira issues and creates QA sprint tickets. Built with Claude Code, Playwright MCP, Qase &amp; Jira.</p>
+      </div>
 
-    <div class="timeline-content previous-project" style="margin-bottom: 20px;">
-      <h3>
-        <a href="https://www.3ds.com/" target="_blank" rel="noopener noreferrer">
-          Dassault CATIA v6
-        </a>
-        <span class="project-badge">Live</span>
-        <span class="project-category-badge web">Web</span>
-      </h3>
-      <p>3DEXPERIENCE platform enabling virtual modeling of enterprises. Performed comprehensive testing including automation, regression, and quality assurance for this powerful CAD solution.</p>
-    </div>
-
-    <div class="see-all-projects">
-      <a href="pages/projects.html" class="see-all-btn">
-        <i class="fas fa-th-large"></i>
-        <span>View All Projects</span>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+      <div class="repo-list">
+        <div class="repo">
+          <span class="repo-name"><a href="https://github.com/imransdet/playwright-e2e-test-realworld-app" target="_blank" rel="noopener">playwright-e2e-test-realworld-app</a> <span class="tool">Playwright</span> <span class="lang">TypeScript</span></span>
+          <span class="repo-desc">E2E automation for the Real World App — UI and API tests with a complete CI/CD workflow.</span>
+        </div>
+        <div class="repo">
+          <span class="repo-name"><a href="https://github.com/imransdet/performance-test-with-grafana-k6" target="_blank" rel="noopener">performance-test-with-grafana-k6</a> <span class="tool">Grafana K6</span> <span class="lang">JavaScript</span></span>
+          <span class="repo-desc">Grafana K6 performance testing framework for load and stress testing.</span>
+        </div>
+        <div class="repo">
+          <span class="repo-name"><a href="https://github.com/imransdet/cypress-test-web-api" target="_blank" rel="noopener">cypress-test-web-api</a> <span class="tool">Cypress</span> <span class="lang">TypeScript</span></span>
+          <span class="repo-desc">UI workflows and API endpoints validated with Cypress using a Page Object Model structure.</span>
+        </div>
+        <div class="repo">
+          <span class="repo-name"><a href="https://github.com/imransdet/selenium-java-pom" target="_blank" rel="noopener">selenium-java-pom</a> <span class="tool">Selenium</span> <span class="lang">Java</span></span>
+          <span class="repo-desc">Selenium + Java automation with Page Object Model, Allure and Extent reporting.</span>
+        </div>
+        <div class="repo">
+          <span class="repo-name"><a href="https://github.com/imransdet/appium-java-for-mobile-app" target="_blank" rel="noopener">appium-java-for-mobile-app</a> <span class="tool">Appium</span> <span class="lang">Java</span></span>
+          <span class="repo-desc">Ready-to-clone Appium framework for native, hybrid and web Android apps.</span>
+        </div>
+        <div class="repo">
+          <span class="repo-name"><a href="https://github.com/imransdet/api-test-automation-postman-newman" target="_blank" rel="noopener">api-test-automation-postman-newman</a> <span class="tool">Postman + Newman</span> <span class="lang">JavaScript</span></span>
+          <span class="repo-desc">API automation with Postman collections and Newman, integrated into CI.</span>
+        </div>
+      </div>
+      <a class="more-link" href="https://github.com/imransdet?tab=repositories" target="_blank" rel="noopener">→ all 30 repositories on GitHub</a>
     </div>
   </section>
 
   <section id="education">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <div class="education-card">
-      <div class="education-icon">
-        <i class="fas fa-university"></i>
+    <div class="container">
+      <h2 class="section-title">cat education.md</h2>
+      <div class="edu-card">
+        <h3>B.Sc in Electrical &amp; Electronic Engineering</h3>
+        <p class="edu-meta"><a href="https://www.uits.edu.bd/" target="_blank" rel="noopener">University of Information Technology &amp; Science</a>, Dhaka · 2011 – 2016</p>
       </div>
-      <div class="education-content">
-        <h3>
-          <a href="https://www.uits.edu.bd/" target="_blank" rel="noopener noreferrer">
-            University of Information Technology & Science
-          </a>
-        </h3>
-        <p class="education-location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-        <p class="date"><i class="far fa-calendar-alt"></i> May 2011 - April 2016</p>
-        <div class="degree-info">
-          <span class="degree-badge"><i class="fas fa-medal"></i> Bachelor of Science (B.Sc.)</span>
-          <span class="major-badge"><i class="fas fa-microchip"></i> Electrical and Electronic Engineering (EEE)</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="certifications">
-    <h2><i class="fas fa-certificate"></i> Professional Certifications</h2>
-    <div class="certifications-grid">
-      <div class="certification-card">
-        <div class="cert-icon">
-          <i class="fas fa-award"></i>
-        </div>
-        <div class="cert-content">
-          <h3>
-            <a href="https://zertdb.isqi.org/en/download/index/token/_%216t%24BRPz7Ss2MXt3i59" target="_blank" rel="noopener noreferrer">
-              ISTQB Certified Tester
-            </a>
-          </h3>
-          <p class="cert-issuer">
-            <a href="https://www.istqb.org/" target="_blank" rel="noopener noreferrer">
-              International Software Testing Qualifications Board
-            </a>
-          </p>
-          <p class="cert-details">
-            <span class="cert-badge"><i class="fas fa-certificate"></i> ISTQB-CTFL</span>
-            <span class="cert-date"><i class="far fa-calendar-check"></i> November 2021</span>
-          </p>
-          <p class="cert-description">Foundation Level certification demonstrating core testing principles, techniques, and best practices.</p>
-        </div>
+      <div class="edu-card">
+        <h3><a href="https://zertdb.isqi.org/en/download/index/token/_%216t%24BRPz7Ss2MXt3i59" target="_blank" rel="noopener">ISTQB Certified Tester (CTFL)</a></h3>
+        <p class="edu-meta"><a href="https://www.istqb.org/" target="_blank" rel="noopener">International Software Testing Qualifications Board</a> · November 2021</p>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="container footer-content">
-    <div class="footer-resume-section">
-      <h3><i class="fas fa-file-pdf"></i> Resume</h3>
-      <div class="footer-resume-actions">
-        <a href="resume/Al_Imran_QA_Engineer_Resume.pdf" download class="footer-download-btn">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <a href="resume/Al_Imran_QA_Engineer_Resume.pdf" target="_blank" class="footer-download-btn">
-          <i class="fas fa-eye"></i> View
-        </a>
-      </div>
-      <p class="footer-update-note">Last updated: October 2025</p>
-    </div>
+  <div class="container">
+    <p><span class="prompt">$</span> echo "Open to QA automation opportunities — <a href="mailto:imranreee@gmail.com">imranreee@gmail.com</a>"</p>
+    <p class="comment" style="margin-top:8px;">© 2026 Al Imran · built with plain HTML/CSS · <a href="resume/Resume_AlImran_2026.pdf" target="_blank">resume.pdf</a></p>
   </div>
 </footer>
 
-<!-- Scroll to Top Button -->
-<button id="scrollToTop" class="scroll-to-top" title="Go to top">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
-<script>
-// Sticky header functionality
-const stickyHeader = document.getElementById('stickyHeader');
-let lastScrollPosition = 0;
-
-function handleScroll() {
-  const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  
-  // Show sticky header when scrolling down past 150px
-  if (currentScrollPosition > 150) {
-    stickyHeader.classList.add('show');
-  } else {
-    stickyHeader.classList.remove('show');
-  }
-  
-  lastScrollPosition = currentScrollPosition;
-}
-
-// Listen to scroll events
-window.addEventListener('scroll', handleScroll, { passive: true });
-
-// Initial check
-handleScroll();
-
-// Scroll to top functionality
-const scrollToTopBtn = document.getElementById('scrollToTop');
-window.addEventListener('scroll', function() {
-  if (window.pageYOffset > 300) {
-    scrollToTopBtn.classList.add('show');
-  } else {
-    scrollToTopBtn.classList.remove('show');
-  }
-}, { passive: true });
-
-scrollToTopBtn.addEventListener('click', function() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-
-// Smooth scroll for sticky header links
-document.querySelectorAll('.sticky-nav a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const offset = 80; // Offset for sticky header height
-      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-    }
-  });
-});
-
-console.log('Sticky header initialized');
-</script>
 </body>
 </html>
