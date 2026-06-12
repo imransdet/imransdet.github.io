@@ -125,6 +125,38 @@ a:hover {
   min-width: 0;
 }
 
+.hero-photo {
+  flex: 0 0 auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  filter: grayscale(10%);
+  transition: filter 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-photo img:hover {
+  filter: grayscale(0%);
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(63, 185, 80, 0.15);
+}
+
+.hero-photo .photo-caption {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
 .hero h1 {
   font-size: 34px;
   letter-spacing: 1px;
@@ -557,6 +589,16 @@ footer a {
     flex-direction: column-reverse;
     align-items: stretch;
     gap: 24px;
+  }
+
+  .hero-photo {
+    align-self: stretch;
+    align-items: flex-start;
+  }
+
+  .hero-photo img {
+    width: 170px;
+    height: 170px;
   }
 
   .hero h1 {
